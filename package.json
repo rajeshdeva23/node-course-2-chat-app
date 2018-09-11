@@ -13,7 +13,7 @@
         "unit-test": "mocha server/utils/*.test.js --timeout 1500",
         "code-coverage-test": "nyc --reporter=html --reporter=text  mocha server/utils/*.test.js --timeout 1500",        
         "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' http://localhost:3000",
-        "e2etest": "server/testcafe/test.js",
+        "e2etest": "server/testcafe/test.js"
         
     },
     "engines": {
