@@ -14,7 +14,7 @@
         "code-coverage-test": "nyc --reporter=html --reporter=text  mocha server/utils/*.test.js --timeout 1500",        
         "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' http://localhost:3000",
         "e2etest": "server/testcafe/test.js",
-        "test-mochaawesome": "server/utils/*.test.js"
+        "test-mochaawesome": "mocha server/utils/*.test.js --reporter mochawesome"
     },
     "engines": {
         "node": "9.5.0"
